@@ -1,0 +1,11 @@
+<h2>Детали заметки</h2>
+
+<p *ngIf="note">
+    <strong>{{ note.title }}</strong>
+    {{ note.content }}
+    <em>{{ note.createdAt | date: 'medium' }}</em>
+</p>
+
+<p *ngIf="!note">
+    Заметки нет
+</p>

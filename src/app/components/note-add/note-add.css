@@ -1,0 +1,42 @@
+input,
+textarea {
+    border: 0;
+    background-color: #4292c4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    clear: both;
+    width: 500px;
+    padding: 10px 15px;
+    color: #1d4e6c;
+    outline: none;
+}
+
+::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: #1d4e6c;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    border: 1px solid #1d6c39;
+    background-color: #42c46b;
+    border-radius: 5px;
+    color: #1d6c39;
+    outline: none;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+button:hover {
+    transition: all 500ms ease;
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

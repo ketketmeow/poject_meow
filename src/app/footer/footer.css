@@ -1,0 +1,44 @@
+footer {
+    width: 90%;
+    padding: 20px 5%;
+    background: #222;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    color: #8b3939;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input {
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    background: #bcbcbc;
+    margin-right: 10px;
+}
+
+button {
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    background-repeat: 5px;
+    background: #53c96f;
+    color: #318945;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+button:hover {
+    transition: all 500ms ease;
+    transform: scale(1.05);
+}
+
+.subs p {
+    margin-bottom: 5px;
+    color: #fff;
+}
