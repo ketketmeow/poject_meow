@@ -1,9 +1,9 @@
 <h2>Добавить заметку</h2>
 
-<form #noteForm="ngForm" (ngSubmit)="addNote(noteForm)"> <!-- Форма проверяется через ngForm и обрабывает через событие ngSubmit (при отправке данных из этой формы - будет вызывать функция addNote - функцию же будем передавать в noteForm) -->
+<form #noteForm="ngForm" (ngSubmit)="addNote(noteForm)">
     <div>
         <label>Заголовок</label><br>
-        <input type="text" name="title" [(ngModel)]="newNote().title" required minlength="3" maxlength="50" #titleRef="ngModel" placeholder="Заголовок"><br>
+        <input type="text" name="title" [(ngModel)]="newNote().title" required minlength="3" maxlength="50" #titleRef="ngModel" placeholder="Заголовок"><br> <!--  Вводим переменную через ngModel -->
         <div *ngIf="submitted && titleRef.invalid" style="color: red;">
         <small *ngIf="titleRef.errors?.['required']">Заголовок обязателен</small>
         <small *ngIf="titleRef.errors?.['minlength']">Заголовок минимум 3 символа</small>

@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-  @Input() title!: string;
+  @Input() title!: string; // Передает в шапку "title = "Список хотелок и заметок""
 }

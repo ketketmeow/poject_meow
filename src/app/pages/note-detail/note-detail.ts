@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NoteService } from '../../services/note';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common'; // Модуль, который помогает обрабывать директивы (*ngIf, *ngFor и тд...)
 
 @Component({
-  selector: 'app-note-detail',
+  selector: 'app-note-detail', 
   imports: [CommonModule],
   templateUrl: './note-detail.html',
   styleUrl: './note-detail.css',

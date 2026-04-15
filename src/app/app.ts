@@ -10,6 +10,7 @@ import { Footer } from './footer/footer';
   styleUrl: './app.css'
 })
 export class App {
+  
   handleSubscribe() {
     console.log("all is working");
     alert("all is working")

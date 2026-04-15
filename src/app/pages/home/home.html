@@ -1,7 +1,7 @@
 <h1 (dblclick)="showAlert()">Мои заметки</h1>
 
 <ul>
-  <li *ngFor="let note of notes()">
+  <li *ngFor="let note of notes()"> <!-- Создаем цикл, создаем переменную note и перебираем массив notes -->
     <a [routerLink]="['/note', note.id]">{{ note.title }}</a>
     
 </li>

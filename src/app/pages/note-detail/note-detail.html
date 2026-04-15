@@ -1,9 +1,9 @@
 <h2>Детали заметки</h2>
 
-<p *ngIf="note">
+<p *ngIf="note"> <!-- Через цикл перебираем заметки-->
     <strong>{{ note.title }}</strong>
     {{ note.content }}
-    <em>{{ note.createdAt | date: 'medium' }}</em>
+    <em>{{ note.createdAt | date: 'medium' }}</em> <!-- фильтруем данные как | date: 'medium' -->
 </p>
 
 <p *ngIf="!note">
