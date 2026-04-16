@@ -2,7 +2,7 @@ import { Injectable, signal } from '@angular/core';
 import { Note } from '../models/note.model';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root', // Данный сервис доступен во всем приложении
 })
 
 export class NoteService {
@@ -19,17 +19,17 @@ export class NoteService {
 }
   ])
 
-  getNotes() {
+  getNotes() { // Функция возвращает массит notes (сверху)
     return this.notes;
   }
 
-  addNote(title: string, content: string) { // Сформировали новый объект Заметки
+  addNote(title: string, content: string) { // Принимает title и content
     const newNote: Note = {
       id: Date.now(),
       title: title,
       content: content,
       createdAt: new Date()
     };
-    this.notes.update(notes => [...notes, newNote]); // Обращаемся к this.notes, потом к update - к текущему значению добавляем новые значения 
+    this.notes.update(notes => [...notes, newNote]); // Обращаемся к this.notes (массиву), потом к update - и к текущему значению добавляем новые значения 
   }
 }

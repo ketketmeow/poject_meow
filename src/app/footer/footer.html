@@ -1,5 +1,5 @@
 <footer [ngClass]="{footer:username != ''}"> <!-- ngClass позвляет добавить css класс -->
-    <p class="copy">Copyrights!</p>
+    <p class="copy">Пиво?</p>
     <div class="subs">
         <p *ngIf="username != ''">Hello, {{ username }}</p> <!-- Если username существует, то показываем текст -->
         <input [(ngModel)]="username" placeholder="Введите имя"> <!-- [(ngModel)]="username" - подставляется вводимое значеие через обработчик события-->

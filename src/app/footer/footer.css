@@ -1,7 +1,7 @@
 footer {
     width: 90%;
     padding: 20px 5%;
-    background: #222;
+    background: #c9b7b7;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@ input {
     outline: none;
     border: 0;
     padding: 10px 20px;
-    background: #bcbcbc;
+    background: #b9b3b3;
     margin-right: 10px;
 }
 
@@ -40,5 +40,5 @@ button:hover {
 
 .subs p {
     margin-bottom: 5px;
-    color: #fff;
+    color: #8b3939;
 }

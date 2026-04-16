@@ -29,6 +29,7 @@ button {
     outline: none;
     cursor: pointer;
     transition: all 500ms ease;
+    padding: 10px 30px;
 }
 
 button:hover {

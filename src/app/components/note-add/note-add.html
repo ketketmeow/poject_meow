@@ -1,6 +1,6 @@
 <h2>Добавить заметку</h2>
 
-<form #noteForm="ngForm" (ngSubmit)="addNote(noteForm)">
+<form #noteForm="ngForm" (ngSubmit)="addNote(noteForm)"> <!-- ngForm - позволит передать все из формы + проверки, ngSubmit(обработчик события) - при отправке данных из формы вызываем функцию addNote и в нее будем передавать noteForm -->
     <div>
         <label>Заголовок</label><br>
         <input type="text" name="title" [(ngModel)]="newNote().title" required minlength="3" maxlength="50" #titleRef="ngModel" placeholder="Заголовок"><br> <!--  Вводим переменную через ngModel -->

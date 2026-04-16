@@ -1,7 +1,7 @@
 header {
     width: 90%;
     padding: 20px 5%;
-    background: #222;
+    background: #c9b7b7;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -22,11 +22,11 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    color: #dfdfdf;
+    color: #8b3939;
 }
 
 nav ul a {
-    color: #dfdfdf;
+    color: #8b3939;
     transition: all 50ms ease;
 }
 

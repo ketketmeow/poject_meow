@@ -19,17 +19,17 @@ export class NoteAdd {
     content: ''
   })
 
-  protected submitted = false;
+  protected submitted = false; // В эту переменную записывается информация - отправляем ли мы форму
 
-  protected addNote(form: any) {
-    this.submitted = true; 
+  protected addNote(form: any) { //Передаем форму
+    this.submitted = true; // здесь начинаем отправку формы
 
     if(form.invalid) return; // Если есть ошибки
 
     const noteData = this.newNote(); // Сюда попадает все вводимое от пользователя
     if(!noteData.title || !noteData.content) return; //Если title не подставлен или значение не подставлено, то выходим из функции
 
-    this.noteService.addNote(noteData.title, noteData.content);
+    this.noteService.addNote(noteData.title, noteData.content); // Через noteService.addNote добавляем заметку с title и content
 
     this.newNote.set({ // Очищаем значения, чтобы добавить новые
       title: '',
@@ -37,6 +37,6 @@ export class NoteAdd {
     });
     
     form.resetForm(); // Очищаем формочку
-    this.submitted = false;
+    this.submitted = false; // Завершаем отправку формы
   }
 }

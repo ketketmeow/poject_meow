@@ -21,7 +21,7 @@ export class Home {
   showAlert() {
     alert("You clicked");
 }
-    protected get notes() {
+    protected get notes() { // Функция только получает данные
     return this.noteService.getNotes();
   }
 

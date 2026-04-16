@@ -1,6 +1,6 @@
 <h2>Детали заметки</h2>
 
-<p *ngIf="note"> <!-- Через цикл перебираем заметки-->
+<p *ngIf="note"> <!-- Через цикл перебираем заметки, если заметка есть - выводит -->
     <strong>{{ note.title }}</strong>
     {{ note.content }}
     <em>{{ note.createdAt | date: 'medium' }}</em> <!-- фильтруем данные как | date: 'medium' -->
