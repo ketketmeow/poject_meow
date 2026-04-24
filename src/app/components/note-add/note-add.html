@@ -5,9 +5,9 @@
         <label>Заголовок</label><br>
         <input type="text" name="title" [(ngModel)]="newNote().title" required minlength="3" maxlength="50" #titleRef="ngModel" placeholder="Заголовок"><br> <!--  Вводим переменную через ngModel -->
         <div *ngIf="submitted && titleRef.invalid" style="color: red;">
-        <small *ngIf="titleRef.errors?.['required']">Заголовок обязателен</small>
-        <small *ngIf="titleRef.errors?.['minlength']">Заголовок минимум 3 символа</small>
-        <small *ngIf="titleRef.errors?.['maxlength']">Заголовок максимум 50 символов</small>
+        @if(titleRef.errors?.['required']) { <small> Заголовок обязателен </small> }
+        @if(titleRef.errors?.['minlength']) { <small> Заголовок минимум 3 символа </small> }
+        @if(titleRef.errors?.['maxlength']) { <small> Заголовок максимум 50 символов </small>}
         </div>
     </div>
 

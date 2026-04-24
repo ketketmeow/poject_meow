@@ -1,0 +1,40 @@
+@if (weatherData) { <div class="container">
+  <div class="button_search">
+    <form class="inputText" #form="ngForm" (submit)="onSubmit()" name="cityName">
+      <input type="text" [(ngModel)]="cityName" name="cityName" placeholder="Найти город" />
+    </form>
+  </div>
+
+  <div class="weather">
+
+    <div class="weather-data">
+
+      <div class="location">{{ weatherData.location.name }}</div>
+      <div class="dateToday">{{ weatherData.location.localtime }}</div>
+      <div class="temperature">
+
+        <div class="temperature_data">{{ weatherData.current.temp_c | number: '1.0-0' }}</div>
+
+      <div class="temp_C">
+        °C
+      </div>
+
+      </div>
+
+      <div class="condition">
+        <div class="condition_icon">
+        <img src="{{ weatherData.current.condition.icon }}" alt="" />
+      </div>
+
+      <div class="condition_text">{{ weatherData.current.condition.text }}</div>
+
+      </div>
+      <div class="weatherMoreData">
+        <span class="visibility"> <img src="../img/visibility.png" > Visibility {{ weatherData.current.vis_km }} км</span>
+        <span class="feelsLike"> <img src="../img/visibility3.png " > Feels like {{ weatherData.current.feelslike_c }} °C</span>
+        <span class="humidity"> <img src="../img/visibility2.png" > Humidity {{ weatherData.current.humidity }} % </span>
+        <span class="wind"> <img src="../img/visibility4.png" > Wind {{ weatherData.current.wind_kph }} км/ч </span>
+      </div>
+    </div>
+  </div>
+</div> }
