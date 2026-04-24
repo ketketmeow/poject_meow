@@ -3,12 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
 import { Weather } from './weather/weather';
-import { Poke } from './poke/poke';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, RouterOutlet, Weather, Poke],
+  imports: [Header, Footer, RouterOutlet, Weather],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
